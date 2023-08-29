@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form(method="POST" action="/new")
+    div(class="row")
+        label(for="name")='Name: '
+        input(type="text" name="userName" required)
+    div(class="row") 
+        label(for="message")='Message: '
+        input(type="text" name="userMessage" required) 
+    button(type='submit' class="submit-btn")
+        <i class="fa-solid fa-paper-plane"></i>
+
+  
+  

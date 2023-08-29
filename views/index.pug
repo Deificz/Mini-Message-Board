@@ -1,5 +1,24 @@
 extends layout
 
+
 block content
-  h1= title
-  p Welcome to #{title}
+  div(class="board")
+    header
+      img(src="/images/logo.png", alt="")
+      h1
+        | Message Board 
+        span by Deificz
+    div(class="message-list")
+      ul
+       each message in messages
+        h2= message.user
+        h3= message.text
+        p= message.added
+    button#new-btn
+        i(class="fa-solid fa-message")
+  
+    script.
+      document.getElementById('new-btn').addEventListener('click', () => {
+        window.location.href = '/new';
+      });
+  

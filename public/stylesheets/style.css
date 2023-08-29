@@ -1,8 +1,168 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #000000fc;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+form{
+  background: rgba(103, 103, 103, 0.486);
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 50px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+input{
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 35px;
+}
+
+.submit-btn{
+  all: unset;
+  margin-top: 30px;
+  transition: all .3s ease-in-out;
+  font-size: 80px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color:white
+}
+
+.submit-btn:hover{
+  color: black;
+  text-shadow:
+  0 0 7px #ffffff8e,
+  0 0 10px #ffffff72,
+  0 0 82px rgba(0, 255, 170, 0.604),
+  0 0 12px rgb(12, 151, 123),
+  0 0 12px rgb(12, 151, 123),
+  0 0 12px rgb(12, 151, 123);
+}
+
+
+.board{
+  background: rgba(42, 42, 42, 0.653);
+  box-shadow: 0px 0 30px 5px darkcyan;
+  padding: 3rem 3rem 1.5rem 3rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.message-list{
+  background: rgba(85, 85, 85, 0.127);
+  box-shadow: 0 8px 32px 0 rgba(0, 255, 208, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+    border: solid 2px rgba(255, 255, 255, 0.771);
+  font-size: 1rem;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 30px;
+  height: 50vh;
+  width: 50vw;
+  overflow-y: scroll;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+header img{
+  height: 4rem;
+  width: auto;
+}
+
+.board h1{
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 20px;
+}
+
+.message-list h2{
+  color: rgb(3, 213, 213);
+  font-size: 2rem;
+}
+.message-list h3{
+  color: rgba(255, 255, 255, 0.887);
+  font-size: 1.8rem;
+}
+.message-list p{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.686);
+  font-size: 1rem;
+}
+
+#new-btn{
+  all: unset;
+  margin-top: 30px;
+  transition: all .3s ease-in-out;
+  font-size: 100px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color:white
+}
+
+#new-btn:hover{
+  color: black;
+  font-size: 100px;
+  text-shadow:
+  0 0 7px #ffffff8e,
+  0 0 10px #ffffff72,
+  0 0 82px rgba(0, 255, 170, 0.604),
+  0 0 12px rgb(12, 151, 123),
+  0 0 12px rgb(12, 151, 123),
+  0 0 12px rgb(12, 151, 123);
+}
+
+span{
+  font-size: .8em;
+  text-shadow:
+    0 0 7px #ffffff8e,
+    0 0 10px #ffffff72,
+    0 0 82px rgba(0, 255, 170, 0.604),
+    0 0 12px rgb(12, 151, 123),
+    0 0 12px rgb(12, 151, 123),
+    0 0 12px rgb(12, 151, 123);
+}
+
+
+::-webkit-scrollbar {
+  width: 0; 
+}
+::-webkit-scrollbar-track {
+  width: 12px; 
 }
