@@ -7,4 +7,4 @@ Tech stack used:
   -  CSS
   -  Express JS
 
-**Live preview:**
+**Live preview:** https://mini-message-board-xt5t.onrender.com
