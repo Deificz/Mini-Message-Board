@@ -2,14 +2,23 @@ extends layout
 
 block content
   form(method="POST" action="/new")
+    button(type='button' onclick="handleClick()" class="back-btn")
+        <i class="fa-solid fa-arrow-left"></i>
     div(class="row")
         label(for="name")='Name: '
         input(type="text" name="userName" required)
     div(class="row") 
         label(for="message")='Message: '
         input(type="text" name="userMessage" required) 
-    button(type='submit' class="submit-btn")
-        <i class="fa-solid fa-paper-plane"></i>
+    div(class="row") 
+        button(type='submit' class="submit-btn")
+            <i class="fa-solid fa-paper-plane"></i>
+    script.
+        function handleClick(){
+            window.location.href= "/"
+        }
+      
+ 
 
   
   
