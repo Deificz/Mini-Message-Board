@@ -16,7 +16,8 @@ a {
 
 
 form{
-  background: rgba(103, 103, 103, 0.486);
+  background: rgba(1, 85, 79, 0.264);
+  box-shadow: 0 8px 32px 0 rgba(0, 255, 208, 0.37);
   border: solid 2px white;
   display: flex;
   flex-direction: column;
@@ -84,7 +85,7 @@ input{
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
-    border: solid 2px rgba(255, 255, 255, 0.771);
+  border: solid 2px rgba(255, 255, 255, 0.771);
   font-size: 1rem;
   padding: 30px;
   margin-top: 30px;
@@ -120,7 +121,6 @@ header img{
   font-size: 1.8rem;
 }
 .message-list p{
-  font-size: 10px;
   color: rgba(255, 255, 255, 0.686);
   font-size: 1rem;
 }
@@ -165,4 +165,131 @@ span{
 }
 ::-webkit-scrollbar-track {
   width: 12px; 
+}
+
+@media (max-width:380px){
+  .message-list{
+    padding: 20px 80px 20px 0px;
+  }
+  ul{
+    margin-left: -10px;
+  }
+  .board h1{
+    font-size: 1.7rem;
+  }
+  .message-list h2{
+    font-size: 1.2rem;
+  }
+  .message-list h3{
+    font-size: 1rem;
+  }
+  .message-list p{
+    font-size: .8rem;
+  }
+  .board{
+    width: 70vw;
+  }
+  label{
+
+    font-size: 15px;
+  }
+  input{
+   
+    font-size: 18px;
+  }
+}
+@media (max-width:640px){
+  .message-list{
+    padding: 20px 80px 20px 0px;
+  }
+  ul{
+    margin-left: -10px;
+  }
+  .board h1{
+    font-size: 1.7rem;
+  }
+  .message-list h2{
+    font-size: 1.2rem;
+  }
+  .message-list h3{
+    font-size: 1rem;
+  }
+  .message-list p{
+    font-size: .8rem;
+  }
+  .board{
+    width: 70vw;
+  }
+  label{
+
+    font-size: 15px;
+  }
+  input{
+   
+    font-size: 18px;
+  }
+}
+@media (max-width:750px){
+  .message-list{
+    padding: 20px 80px 20px 0px;
+  }
+  ul{
+    margin-left: -10px;
+  }
+  .board h1{
+    font-size: 1.7rem;
+  }
+  .message-list h2{
+    font-size: 1.2rem;
+  }
+  .message-list h3{
+    font-size: 1rem;
+  }
+  .message-list p{
+    font-size: .8rem;
+  }
+  .board{
+    width: 70vw;
+  }
+  label{
+
+    font-size: 15px;
+  }
+  input{
+   
+    font-size: 18px;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1366px){
+  .message-list{
+    padding: 20px 20px 20px 0px;
+    height: 50vh;
+  }
+  ul{
+    margin-left: -10px;
+  }
+  .board h1{
+    font-size: 1.7rem;
+  }
+  .message-list h2{
+    font-size: 1.2rem;
+  }
+  .message-list h3{
+    font-size: 1rem;
+  }
+  .message-list p{
+    font-size: .8rem;
+  }
+  .board{
+    width: 50vw;
+  }
+  label{
+
+    font-size: 15px;
+  }
+  input{
+   
+    font-size: 18px;
+  }
 }
