@@ -266,7 +266,7 @@ span{
     font-size: 18px;
   }
 }
-@media only screen and (min-width:641px) and (max-width:1000px){
+@media only screen and (min-width:641px) and (max-width:767px) {
   .message-list{
     padding: 20px 80px 20px 0px;
   }
@@ -274,16 +274,16 @@ span{
     margin-left: -10px;
   }
   .board h1{
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .message-list h2{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .message-list h3{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .message-list p{
-    font-size: .8rem;
+    font-size: 1rem;
   }
   .board{
     width: 70vw;
@@ -298,30 +298,31 @@ span{
   }
 }
 
-@media (min-width:1000px) and (max-width:1366px){
+@media (min-width:768px) and (max-width:1366px){
   .message-list{
     padding: 20px 20px 20px 0px;
     height: 50vh;
     width: 70vw;
   }
+  .board{
+    width: 80vw;
+  }
   ul{
     margin-left: -10px;
   }
   .board h1{
-    font-size: 1.7rem;
+    font-size: 2.3rem;
   }
   .message-list h2{
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .message-list h3{
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .message-list p{
-    font-size: .8rem;
+    font-size: 1rem;
   }
-  .board{
-    width: 80vw;
-  }
+  
   label{
 
     font-size: 15px;
