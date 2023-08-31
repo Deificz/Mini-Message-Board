@@ -7,5 +7,7 @@ Tech stack used:
   -  CSS
   -  Express JS
   -  MongoDB
+#
 
-**Live preview:** https://mini-message-board-xt5t.onrender.com
+### **LIVE PREVIEW:** https://mini-message-board-xt5t.onrender.com
+
