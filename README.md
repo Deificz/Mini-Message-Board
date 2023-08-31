@@ -6,5 +6,6 @@ Tech stack used:
   -  PUG
   -  CSS
   -  Express JS
+  -  MongoDB
 
 **Live preview:** https://mini-message-board-xt5t.onrender.com
