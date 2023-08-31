@@ -21,11 +21,6 @@ router.get('/', async function(req, res, next) {
   }
 });
 
-//REDIRECT TO THE MESSAGE WINDOW
-router.get('/', function(req, res, next) {
-  res.redirect('/new')
-});
-
 //ADD MESSAGE TO THE DATABASE USING POST 
 router.post('/new', async function(req,res,next){
   const userName = req.body.userName;
@@ -42,8 +37,6 @@ router.post('/new', async function(req,res,next){
   }catch{
     res.status(500).json({ error: 'Message failed' });
   }
-
-  
 });
 
 module.exports = router;
