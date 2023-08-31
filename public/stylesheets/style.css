@@ -4,16 +4,98 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
   padding: 0;
   margin: 0;
   background-color: #000000fc;
 }
 
-a {
-  color: #00B7FF;
+.board{
+  background: rgba(42, 42, 42, 0.653);
+  box-shadow: 0px 0 30px 5px darkcyan;
+  padding: 3rem 3rem 1.5rem 3rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
 }
 
+.message-list{
+  background: rgba(85, 85, 85, 0.127);
+  box-shadow: 0 8px 32px 0 rgba(0, 255, 208, 0.37);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.771);
+  font-size: 1rem;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 30px;
+  height: 50vh;
+  width: 50vw;
+  overflow-y: scroll;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+   text-shadow:
+    0 0 7px #ffffff8e,
+    0 0 10px #ffffff72,
+    0 0 82px rgba(0, 255, 170, 0.604),
+    0 0 12px rgb(12, 151, 123),
+    0 0 12px rgb(12, 151, 123),
+    0 0 12px rgb(12, 151, 123);
+}
+
+header img{
+  height: 4rem;
+  width: auto;
+}
+
+.board h1{
+  color: white;
+  font-size: 2.3rem;
+  margin-left: 20px;
+}
+
+.message-list h2{
+  color: rgb(3, 213, 213);
+  font-size: 1.8rem;
+}
+.message-list h3{
+  color: rgba(255, 255, 255, 0.887);
+  font-size: 1.6rem;
+}
+.message-list p{
+  color: rgba(255, 255, 255, 0.686);
+  font-size: .9rem;
+}
+
+#new-btn{
+  all: unset;
+  margin-top: 30px;
+  transition: all .3s ease-in-out;
+  font-size: 100px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  color:white
+}
+
+#new-btn:hover{
+  color: black;
+  font-size: 100px;
+  text-shadow:
+  0 0 7px #ffffff8e,
+  0 0 10px #ffffff72,
+  0 0 82px rgba(0, 255, 170, 0.604),
+  0 0 12px rgb(12, 151, 123),
+  0 0 12px rgb(12, 151, 123),
+  0 0 12px rgb(12, 151, 123);
+}
 
 form{
   background: rgba(1, 85, 79, 0.264);
@@ -102,95 +184,6 @@ input:focus{
   0 0 12px rgb(12, 151, 123);
 }
 
-
-.board{
-  background: rgba(42, 42, 42, 0.653);
-  box-shadow: 0px 0 30px 5px darkcyan;
-  padding: 3rem 3rem 1.5rem 3rem;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 80vh;
-}
-
-.message-list{
-  background: rgba(85, 85, 85, 0.127);
-  box-shadow: 0 8px 32px 0 rgba(0, 255, 208, 0.37);
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: solid 2px rgba(255, 255, 255, 0.771);
-  font-size: 1rem;
-  padding: 30px;
-  margin-top: 30px;
-  border-radius: 30px;
-  height: 50vh;
-  width: 50vw;
-  overflow-y: scroll;
-}
-
-header{
-  display: flex;
-  align-items: center;
-  justify-items: center;
-   text-shadow:
-    0 0 7px #ffffff8e,
-    0 0 10px #ffffff72,
-    0 0 82px rgba(0, 255, 170, 0.604),
-    0 0 12px rgb(12, 151, 123),
-    0 0 12px rgb(12, 151, 123),
-    0 0 12px rgb(12, 151, 123);
-}
-
-header img{
-  height: 4rem;
-  width: auto;
-}
-
-.board h1{
-  color: white;
-  font-size: 2.5rem;
-  margin-left: 20px;
-}
-
-.message-list h2{
-  color: rgb(3, 213, 213);
-  font-size: 2rem;
-}
-.message-list h3{
-  color: rgba(255, 255, 255, 0.887);
-  font-size: 1.8rem;
-}
-.message-list p{
-  color: rgba(255, 255, 255, 0.686);
-  font-size: 1rem;
-}
-
-#new-btn{
-  all: unset;
-  margin-top: 30px;
-  transition: all .3s ease-in-out;
-  font-size: 100px;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  color:white
-}
-
-#new-btn:hover{
-  color: black;
-  font-size: 100px;
-  text-shadow:
-  0 0 7px #ffffff8e,
-  0 0 10px #ffffff72,
-  0 0 82px rgba(0, 255, 170, 0.604),
-  0 0 12px rgb(12, 151, 123),
-  0 0 12px rgb(12, 151, 123),
-  0 0 12px rgb(12, 151, 123);
-}
-
 span{
   font-size: .8em;
    text-shadow:none;
@@ -221,7 +214,7 @@ span{
     font-size: 1rem;
   }
   .message-list p{
-    font-size: .8rem;
+    font-size: .7rem;
   }
   .board{
     width: 70vw;
@@ -235,10 +228,15 @@ span{
     font-size: 18px;
   }
   #new-btn{
+    margin-top: 30px;
     font-size: 60px;
   }
+  
+#new-btn:hover{
+  font-size: 60px;
 }
-@media only screen and (min-width:377px) and (max-width:640px) {
+}
+@media only screen and (min-width:377px) and (max-width:599px) {
   .message-list{
     padding: 20px 80px 20px 0px;
   }
@@ -269,10 +267,14 @@ span{
     font-size: 22px;
   }
   #new-btn{
+    margin-top: 30px;
+    font-size: 70px;
+  }
+  #new-btn:hover{
     font-size: 70px;
   }
 }
-@media only screen and (min-width:641px) and (max-width:767px) {
+@media only screen and (min-width:600px) and (max-width:767px) {
   .message-list{
     padding: 20px 80px 20px 0px;
   }
@@ -303,11 +305,15 @@ span{
     font-size: 38px;
   }
   #new-btn{
-    font-size: 80px;
+    margin-top: 30px;
+    font-size: 70px;
+  }
+  #new-btn:hover{
+    font-size: 70px;
   }
 }
 
-@media (min-width:768px) and (max-width:1200px){
+@media only screen and (min-width:768px) and (max-width:1200px){
   .message-list{
     padding: 20px 20px 20px 0px;
     height: 50vh;
@@ -315,36 +321,41 @@ span{
   }
   .board{
     width: 80vw;
+    height: 60vh;
   }
   ul{
     margin-left: -10px;
   }
   .board h1{
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   .message-list h2{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .message-list h3{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .message-list p{
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   label{
 
-    font-size: 25px;
+    font-size: 30px;
   }
   input{
    
-    font-size: 38px;
+    font-size: 45px;
   }
   #new-btn{
-    font-size: 80px;
+    margin-top: 30px;
+    font-size: 70px;
+  }
+  #new-btn:hover{
+    font-size: 70px;
   }
 }
-@media (min-width:1201px) and (max-width:1367px){
+@media only screen and  (min-width:1201px) and (max-width:1367px){
   .message-list{
     padding: 20px 20px 20px 0px;
     height: 80vh;
@@ -379,6 +390,88 @@ span{
     font-size: 38px;
   }
   #new-btn{
-    font-size: 90px;
+    margin-top: 30px;
+    font-size: 70px;
+  }
+  #new-btn:hover{
+    font-size: 70px;
+  }
+}
+@media only screen and  (min-width:1368px) and (max-width:1600px){
+  .message-list{
+    padding: 20px 20px 20px 0px;
+    height: 80vh;
+    width: 50vw;
+  }
+  .board{
+    height: 80vh;
+    width: 50vw;
+  }
+  ul{
+    margin-left: -10px;
+  }
+  .board h1{
+    font-size: 1.8rem;
+  }
+  .message-list h2{
+    font-size: 1.5rem;
+  }
+  .message-list h3{
+    font-size: 1.3rem;
+  }
+  .message-list p{
+    font-size: 1rem;
+  }
+  
+  label{
+
+    font-size: 25px;
+  }
+  input{
+   
+    font-size: 38px;
+  }
+  #new-btn{
+    margin-top: 30px;
+    font-size: 80px;
+  }
+  #new-btn:hover{
+    font-size: 80px;
+  }
+}
+
+@media only screen and  (min-height:2000px) and (max-width:2600px){
+  .board h1{
+    font-size: 2.5rem;
+  }
+  .message-list h2{
+    font-size: 2.3rem;
+  }
+  .message-list h3{
+    font-size: 2rem;
+  }
+  .message-list p{
+    font-size: 1.5rem;
+  }
+
+  label{
+
+    font-size: 45px;
+  }
+  input{
+    font-size: 66px;
+  }
+  .submit-btn{
+    font-size: 120px;
+  }
+  .back-btn{
+    font-size:90px;
+  }
+  #new-btn{
+    margin-top: 30px;
+    font-size: 120px;
+  }
+  #new-btn:hover{
+    font-size: 120px;
   }
 }
